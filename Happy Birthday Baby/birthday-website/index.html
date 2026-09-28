@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy 20th Birthday, My Love 💗</title>
+  <meta name="description" content="A little birthday surprise made with love.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,600&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- =========================================================
+       PERSONALIZE HERE:
+       1) Change "BABY" below to your girlfriend's name/nickname.
+       2) Change "YOUR NAME" below to your name.
+       3) Edit birthday messages directly in this HTML.
+       4) Replace images/photo1.jpg ... photo6.jpg in /images/.
+       5) Replace audio/birthday-song.mp3 in /audio/.
+       ========================================================= -->
+
+  <div id="particle-layer" aria-hidden="true"></div>
+  <div id="cursor-heart" aria-hidden="true">♡</div>
+
+  <header class="topbar">
+    <button class="brand" data-page="0" aria-label="Go home">
+      <span>♡</span> for my baby
+    </button>
+
+    <nav class="nav" aria-label="Birthday pages">
+      <button class="nav-link active" data-page="0">Home</button>
+      <button class="nav-link" data-page="1">Letter</button>
+      <button class="nav-link" data-page="2">Collection</button>
+      <button class="nav-link" data-page="3">20 Things</button>
+      <button class="nav-link" data-page="4">Wish</button>
+    </nav>
+
+    <button class="music-btn" id="musicToggle" aria-label="Toggle birthday music" title="Music">
+      <span id="musicIcon">♫</span>
+    </button>
+  </header>
+
+  <main id="app">
+    <!-- PAGE 1 -->
+    <section class="page active" data-index="0">
+      <div class="hero-orbit orbit-one"></div>
+      <div class="hero-orbit orbit-two"></div>
+      <div class="hero-content">
+        <div class="eyebrow">a tiny website made just for you ✦</div>
+        <div class="big-20" aria-hidden="true">20</div>
+        <h1>Happy 20th Birthday,<br><span>My Love! 💗</span></h1>
+        <p class="hero-subtitle">Today is all about you.</p>
+        <p class="intro">
+          Happy birthday to the girl who makes my days brighter, my heart feel lighter, and my life a little more meaningful. Sobrang thankful ako na dumating ka sa buhay ko, and I’m really happy na I get to know, love, and be part of your life. Today is all about you, and I hope you know how much you’re loved, appreciated, and special to me. ❤️
+        </p>
+        <button class="primary-btn next-btn" data-next="1">
+          Open Your Birthday Surprise <span>💌</span>
+        </button>
+        <div class="made-with-love">Made with love, just for you ♡</div>
+      </div>
+      <div class="scroll-hint">scroll a little <span>↓</span></div>
+    </section>
+
+    <!-- PAGE 2 -->
+    <section class="page dark-page" data-index="1">
+      <div class="section-heading">
+        <div class="eyebrow">page two · something from my heart</div>
+        <h2>A Little Letter For You <span>💌</span></h2>
+      </div>
+
+      <article class="letter-card">
+        <div class="letter-tape tape-left"></div>
+        <div class="letter-tape tape-right"></div>
+        <div class="letter-date">20.09.xx · written with love</div>
+        <div id="letterText" class="letter-text" aria-live="polite"></div>
+        <div class="letter-signature" id="letterSignature">Forever yours, ♡ YOUR NAME</div>
+      </article>
+
+      <button class="primary-btn next-btn" data-next="2">Continue <span>→</span></button>
+    </section>
+
+    <!-- PAGE 3 -->
+    <section class="page memory-page" data-index="2">
+      <div class="section-heading">
+        <div class="eyebrow">page three · our little scrapbook</div>
+        <h2>A Little Collection of You <span>📸</span></h2>
+        <p>Click a photo. I put a little piece of us in every frame.</p>
+      </div>
+
+      <div class="photo-grid">
+        <figure class="polaroid rotate-left" data-photo="0">
+          <div class="tape"></div>
+          <img src="images/photo1.jpg" alt="Memory 1" onerror="this.src='https://placehold.co/900x1100/f9b4cf/171017?text=Photo+1'">
+          <figcaption>This is one of those pictures na napapaisip talaga ako, ang ganda ng girlfriend ko.</figcaption>
+        </figure>
+
+        <figure class="polaroid rotate-right" data-photo="1">
+          <div class="tape"></div>
+          <img src="images/photo2.jpg" alt="Memory 2" onerror="this.src='https://placehold.co/900x1100/ffd9e8/171017?text=Photo+2'">
+          <figcaption>I swear, hindi talaga nakakasawa yung face mo.</figcaption>
+        </figure>
+
+        <figure class="polaroid rotate-small" data-photo="2">
+          <div class="tape"></div>
+          <img src="images/photo3.jpg" alt="Memory 3" onerror="this.src='https://placehold.co/900x1100/e98ab0/ffffff?text=Photo+3'">
+          <figcaption>Ikaw lang being you, pero somehow, enough na yon para mapasaya ako.</figcaption>
+        </figure>
+
+        <figure class="polaroid rotate-right" data-photo="3">
+          <div class="tape"></div>
+          <img src="images/photo4.jpg" alt="Memory 4" onerror="this.src='https://placehold.co/900x1100/f5c2d7/171017?text=Photo+4'">
+          <figcaption>I’d replay this moment kung pwede lang.</figcaption>
+        </figure>
+
+        <figure class="polaroid rotate-left" data-photo="4">
+          <div class="tape"></div>
+          <img src="images/photo5.jpg" alt="Memory 5" onerror="this.src='https://placehold.co/900x1100/df719f/ffffff?text=Photo+5'">
+          <figcaption>Kahit yung random and silly pictures mo, I’d still keep every single one.</figcaption>
+        </figure>
+
+        <figure class="polaroid rotate-small" data-photo="5">
+          <div class="tape"></div>
+          <img src="images/photo6.jpg" alt="Memory 6" onerror="this.src='https://placehold.co/900x1100/fbe7ef/171017?text=Photo+6'">
+          <figcaption>One of the first little things I made for you, and I’d still draw you all over again.</figcaption>
+        </figure>
+      </div>
+
+      <p class="memory-note">
+        Just a few little pieces of you that I’ll always be happy to keep
+      </p>
+      <button class="primary-btn next-btn" data-next="3">There's more <span>→</span></button>
+    </section>
+
+    <!-- PAGE 4 -->
+    <section class="page dark-page things-page" data-index="3">
+      <div class="section-heading">
+        <div class="eyebrow">page four · this list could honestly be longer</div>
+        <h2>20 Things I Love About You <span>💗</span></h2>
+        <p>Tap each card. Yes, you have to tap all 20. 😌</p>
+      </div>
+
+      <div class="things-grid" id="thingsGrid"></div>
+
+      <p class="bottom-note">
+        And honestly... I could probably make this list 200 things long.
+      </p>
+      <button class="primary-btn next-btn" data-next="4">One last thing <span>→</span></button>
+    </section>
+
+    <!-- PAGE 5 -->
+    <section class="page final-page" data-index="4">
+      <div class="stars"></div>
+      <div class="final-glow"></div>
+      <div class="final-content">
+        <div class="eyebrow">page five · one last birthday wish</div>
+        <h2>Before You Go... <span>💗</span></h2>
+        <div class="final-message">
+          <p>If there's one thing I want you to remember from today it's this:</p>
+          <p class="emphasis">You are deeply loved</p>
+          <p>
+            Hindi lang today because it’s your birthday, but every single day. I hope you always remember how special you are to me, and how much I appreciate having you in my life
+          </p>
+          <p>
+            As you enter your 20s, I hope you get to experience more things that make you happy, achieve the dreams you’re working for, and become the person you want to be. I hope you get to make so many memories that you’ll look back on someday and smile
+          </p>
+          <p>
+            And through all of those moments, I hope I get to be there with you. I want to see you grow, celebrate your wins, support you through the hard days, and be someone you can always count on
+          </p>
+          <p>
+            Thank you for being you. Thank you for letting me love you and for becoming such an important part of my life
+          </p>
+          <p>
+            Happy 20th birthday, my love.<br>
+            Here’s to 20 years of you, and hopefully many more birthdays, memories, and moments together<br>
+            I love you so much Happy birthday babyyy ❤️
+          </p>
+        </div>
+        <div class="final-number">20 <span>✨</span></div>
+        <h3>I love you. Happy Birthday, baby. ❤️</h3>
+        <button class="primary-btn" id="replayBtn">Replay Our Story <span>♡</span></button>
+      </div>
+    </section>
+  </main>
+
+  <div class="progress">
+    <span id="progressText">01 / 05</span>
+    <div class="progress-line"><span id="progressFill"></span></div>
+  </div>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close photo">×</button>
+    <div class="lightbox-inner">
+      <img id="lightboxImage" src="" alt="">
+      <div id="lightboxCaption"></div>
+    </div>
+  </div>
+
+  <!-- Audio does not autoplay. Put your own file at audio/birthday-song.mp3 -->
+  <audio id="birthdayAudio" loop preload="metadata">
+    <source src="audio/birthday-song.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
